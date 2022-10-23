@@ -8,4 +8,4 @@ To add more here...</br>
 ___
 ### List of Py books
 - The big book of small python projects
-- Data Scirnce from scratch
+- Data Science from scratch
