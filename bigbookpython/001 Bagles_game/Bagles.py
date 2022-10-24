@@ -9,12 +9,12 @@ MAX_GUESSES = 10  # number of guesses
 
 
 def getSecretNum():
-    # numbers = list('0123456789')  # creates list of numbers
-    # random.shuffle(numbers)  # shuffle numbers list
+    numbers = list('0123456789')  # creates list of numbers
+    random.shuffle(numbers)  # shuffle numbers list
     # take first 3 numbers to secretNum
-    secretNum = '123'
-    # for number in range(NUM_DIGITS):
-    #     secretNum += str(numbers[number])
+    secretNum = ''
+    for number in range(NUM_DIGITS):
+        secretNum += str(numbers[number])
     return secretNum
 
 
@@ -27,16 +27,15 @@ def getClues(guess, secretNum):
 
     for i in range(len(guess)):
         if guess[i] == secretNum[i]:
-              # correct numbers at correct position
             clues.append('Fermi')
         elif guess[i] in secretNum:
             clues.append('Pico')
-        if len(clues) == 0:
-            return 'Bagels'
-        else:
-            # sort clues alphabetically not to help with orders
-            clues.sort()
-            return ' '.join(clues)
+    if len(clues) == 0:
+        return 'Bagels'
+    else:
+        # sort clues alphabetically not to help with orders
+        clues.sort()
+    return ' '.join(clues)
 
 def main():
     print('''Bagels, a deductive logic game.
@@ -70,10 +69,10 @@ def main():
                 print('The answer was: {}'.format(secretNum))
 
                     # Do you want to play again?
-                print('Do you want to play again?')
-            if not input('> ').lower().startswith('y'):
-                break
-        print('Thanks for game!')
+        print('Do you want to play again?')
+        if not input('> ').lower().startswith('y'):
+            break
+    print('Thanks for game!')
 
 if __name__ == '__main__':
     main()
