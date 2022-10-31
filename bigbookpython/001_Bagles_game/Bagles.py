@@ -76,3 +76,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+## TODO: Ответить на вопросы ниже по bagels game

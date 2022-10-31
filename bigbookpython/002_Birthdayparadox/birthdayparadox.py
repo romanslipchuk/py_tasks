@@ -81,3 +81,5 @@ print('Out of 100_000 simulations of', numBDays, 'people, there was a')
 print('matching birthdays in that group', simMatch, 'times. That means')
 print('that', numBDays,' people have a', probability, '% chance of')
 print('having a matching birthdays in their group.')
+
+## TODO: ответить на вопросы по birthday paradox game
