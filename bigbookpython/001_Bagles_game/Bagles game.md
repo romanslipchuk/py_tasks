@@ -2,6 +2,7 @@
 ### Bagels, a deductive logic game.
 _By Al Sweigart al@inventwithpython.com_
 ### Questions
+//TODO: Ответить на вопросы ниже по bagels game
 1. Что будет, если изменить константу NUM_DIGITS?
 2. Что будет, если изменить константу MAX_GUESSES?
 3. Что будет, если задать значение NUM_DIGITS больше 10 ?
