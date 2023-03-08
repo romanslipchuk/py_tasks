@@ -1,0 +1,8 @@
+name = input("Print your name, please: ")
+print("Hello, " + name)
+secname = input("Type your second name: ")
+print("Hello, " + name + ' ' + secname)
+print("What do you call a bera without teeeth? \n A gummy bear!")
+number1 = int(input("Input first number: "))
+number2 = int(input("Input second number: "))
+print("The sum will be: ", number1 * number2)
